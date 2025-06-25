@@ -1,0 +1,23 @@
+"use client";
+
+import Link from "next/link";
+import React from "react";
+
+const Page = () => {
+  const assignments = [1, 2, 3];
+
+  return (
+    <div>
+      <center>
+        <h1>SELECT YOUR ASSIGNMENT PLEASE</h1>
+        {assignments.map((id) => (
+          <li>
+            <Link href={`/assignment-${id}`}>Assignment {id}</Link>
+          </li>
+        ))}
+      </center>
+    </div>
+  );
+};
+
+export default Page;
