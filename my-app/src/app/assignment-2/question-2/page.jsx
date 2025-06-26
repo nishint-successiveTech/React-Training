@@ -22,7 +22,7 @@ const page = () => {
         <br>
         </br>
         <hr></hr>
-        <PersonForm />
+        <PersonForm/>
       </center>
     </div>
   );
