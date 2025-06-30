@@ -40,7 +40,6 @@ const PersonForm = () => {
      <br></br>
      <br></br>
 
-     
 
      <h3>Preview:</h3>
      <p>First Name: {firstName}</p>
