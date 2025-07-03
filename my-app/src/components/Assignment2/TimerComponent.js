@@ -2,9 +2,8 @@
 import React from "react";
 import useTimer from "./userTImer";
 
-
 const TimerComponent = () => {
-  const { time, start, pause, reset } = useTimer(10); 
+  const { time, start, pause, reset } = useTimer(10);
 
   return (
     <div>

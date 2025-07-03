@@ -8,18 +8,16 @@ const EmployeeSalary = () => {
     { name: "Mike", salary: 55000 },
   ]);
 
-
   const averageSalary = useMemo(() => {
     console.log("Recalculating average salary...");
     const total = employees.reduce((sum, emp) => sum + emp.salary, 0);
     return (total / employees.length).toFixed(2);
   }, [employees]);
 
- 
   const updateSalaries = () => {
     const updated = employees.map((emp) => ({
       ...emp,
-      salary: Math.floor(Math.random() * 40000) + 40000, 
+      salary: Math.floor(Math.random() * 40000) + 40000,
     }));
     setEmployees(updated);
   };

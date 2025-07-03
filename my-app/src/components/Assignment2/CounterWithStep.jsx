@@ -14,8 +14,8 @@ const CounterWithStep = () => {
   const [step, setStep] = useState(0);
 
   const handleStepChange = (e) => {
-    const newNumber=parseInt(e.target.value,10)
-    setStep(isNaN(newNumber)?"":newNumber)
+    const newNumber = parseInt(e.target.value, 10);
+    setStep(isNaN(newNumber) ? "" : newNumber);
   };
 
   const increment = () => {
@@ -32,7 +32,7 @@ const CounterWithStep = () => {
       <p>Count: {count}</p>
       <button onClick={increment}>Increment</button>
       <button onClick={decrement}>Decrement</button>
-      <input type="number" value={step} onChange={handleStepChange}/>
+      <input type="number" value={step} onChange={handleStepChange} />
     </div>
   );
 };

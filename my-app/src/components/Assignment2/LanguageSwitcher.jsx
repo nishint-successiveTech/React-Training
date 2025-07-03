@@ -1,19 +1,19 @@
-"use client"
-import { LanguageContext } from '@/context/LanguageContext';
-import React, { useContext } from 'react';
-
+"use client";
+import { LanguageContext } from "@/context/LanguageContext";
+import React, { useContext } from "react";
 
 const LanguageSwitcher = () => {
-  const { language, switchToEnglish, switchToSpanish } = useContext(LanguageContext);
+  const { language, switchToEnglish, switchToSpanish } =
+    useContext(LanguageContext);
 
   const content = {
     en: {
-      greeting: 'Hello!',
-      message: 'Welcome to our application.',
+      greeting: "Hello!",
+      message: "Welcome to our application.",
     },
     es: {
-      greeting: '¡Hola!',
-      message: 'Bienvenido a nuestra aplicación.',
+      greeting: "¡Hola!",
+      message: "Bienvenido a nuestra aplicación.",
     },
   };
 

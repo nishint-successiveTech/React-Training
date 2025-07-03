@@ -18,7 +18,7 @@ const Page = () => {
         </ul>
       </center>
     </div>
-  );v
+  );
 };
 
 export default Page;

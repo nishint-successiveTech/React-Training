@@ -19,10 +19,9 @@ const page = () => {
           update the respective state variables. Display the entered information
           below the input fields. .
         </h2>
-        <br>
-        </br>
+        <br></br>
         <hr></hr>
-        <PersonForm/>
+        <PersonForm />
       </center>
     </div>
   );

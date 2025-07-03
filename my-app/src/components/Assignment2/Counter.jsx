@@ -3,7 +3,7 @@
 // Render the current value of count in a <p> element.
 // Add two buttons, one for incrementing the count and another for decrementing it.
 // When the user clicks on the buttons, update the count state accordingly..
-"use client"
+"use client";
 
 import React, { useState } from "react";
 

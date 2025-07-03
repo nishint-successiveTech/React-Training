@@ -15,7 +15,10 @@ const Page = () => {
         </h2>
         <br></br>
         <hr />
-       <h1> <Notification /> </h1>
+        <h1>
+          {" "}
+          <Notification />{" "}
+        </h1>
       </center>
     </div>
   );

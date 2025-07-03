@@ -1,15 +1,15 @@
-"use client"
+"use client";
 
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const ToDoList = () => {
   const [todos, setTodos] = useState([]);
-  const [input, setInput] = useState('');
+  const [input, setInput] = useState("");
 
   const addTodo = () => {
-    if (input.trim() === '') return;
+    if (input.trim() === "") return;
     setTodos([...todos, { id: Date.now(), text: input, completed: false }]);
-    setInput('');
+    setInput("");
   };
 
   const toggleTodo = (id) => {
@@ -43,9 +43,7 @@ const ToDoList = () => {
               checked={todo.completed}
               onChange={() => toggleTodo(todo.id)}
             />
-            <span>
-              {todo.completed ? <s>{todo.text}</s> : todo.text}
-            </span>
+            <span>{todo.completed ? <s>{todo.text}</s> : todo.text}</span>
             <button onClick={() => deleteTodo(todo.id)}>Delete</button>
           </li>
         ))}

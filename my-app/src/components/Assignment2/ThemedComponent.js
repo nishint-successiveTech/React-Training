@@ -1,22 +1,21 @@
-"use client"
+"use client";
 
-import { ThemeContext } from '@/context/ThemeContext';
-import React, { useContext } from 'react';
-
+import { ThemeContext } from "@/context/ThemeContext";
+import React, { useContext } from "react";
 
 const ThemedComponent = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
 
   const styles = {
     light: {
-      backgroundColor: '#fff',
-      color: '#000',
-      padding: '20px',
+      backgroundColor: "#fff",
+      color: "#000",
+      padding: "20px",
     },
     dark: {
-      backgroundColor: '#222',
-      color: '#fff',
-      padding: '20px',
+      backgroundColor: "#222",
+      color: "#fff",
+      padding: "20px",
     },
   };
 

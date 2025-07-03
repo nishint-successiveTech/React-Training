@@ -13,7 +13,9 @@ const page = () => {
         </h2>
         <br></br>
         <hr />
-      <h1><Slideshow /></h1>
+        <h1>
+          <Slideshow />
+        </h1>
       </center>
     </div>
   );

@@ -11,7 +11,7 @@ const useClipboard = () => {
     document.execCommand("copy");
     document.body.removeChild(textarea);
     setCopied(true);
-    setTimeout(() => setCopied(false), 2000); 
+    setTimeout(() => setCopied(false), 2000);
   };
   return { copied, copyToClipboard };
 };

@@ -1,12 +1,12 @@
-import EmployeeSalary from '@/components/Assignment2/EmployeeSalary'
-import React from 'react'
+import EmployeeSalary from "@/components/Assignment2/EmployeeSalary";
+import React from "react";
 
 const page = () => {
   return (
     <div>
-      <EmployeeSalary/>
+      <EmployeeSalary />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;

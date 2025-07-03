@@ -1,4 +1,3 @@
-
 import Counter from "@/components/Assignment2/Counter";
 import React from "react";
 
@@ -16,7 +15,7 @@ const page = () => {
         </h1>
         <br></br>
         <hr></hr>
-        <Counter/>
+        <Counter />
       </center>
     </div>
   );

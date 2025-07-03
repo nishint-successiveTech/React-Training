@@ -1,6 +1,6 @@
-"use client"
-import { CartContext } from '@/context/CartContext';
-import React, { useContext } from 'react';
+"use client";
+import { CartContext } from "@/context/CartContext";
+import React, { useContext } from "react";
 
 const Cart = () => {
   const { cart, removeFromCart, total } = useContext(CartContext);
@@ -11,9 +11,9 @@ const Cart = () => {
       {cart.length === 0 ? (
         <p>Cart is empty</p>
       ) : (
-        cart.map(item => (
+        cart.map((item) => (
           <div key={item.id}>
-            {item.name} - ${item.price}{' '}
+            {item.name} - ${item.price}{" "}
             <button onClick={() => removeFromCart(item.id)}>Remove</button>
           </div>
         ))
