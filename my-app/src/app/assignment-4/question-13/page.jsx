@@ -1,12 +1,12 @@
-import FormikForm from '@/components/Assignment4/validated'
-import React from 'react'
+import FormikForm from "@/components/Assignment4/validated";
+import React from "react";
 
 const page = () => {
   return (
     <div>
-      <FormikForm/>
+      <FormikForm />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;

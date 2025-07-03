@@ -1,12 +1,12 @@
-import DataTable from '@/components/Assignment4/DataTable'
-import React from 'react'
+import DataTable from "@/components/Assignment4/DataTable";
+import React from "react";
 
 const page = () => {
   return (
     <div>
-      <DataTable/>
+      <DataTable />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;

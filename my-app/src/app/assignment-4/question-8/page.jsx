@@ -1,14 +1,14 @@
-import TemperatureConverter from '@/components/Assignment4/TempConv'
-import React from 'react'
+import TemperatureConverter from "@/components/Assignment4/TempConv";
+import React from "react";
 
 const page = () => {
   return (
     <div>
       <center>
-        <TemperatureConverter/>
+        <TemperatureConverter />
       </center>
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;

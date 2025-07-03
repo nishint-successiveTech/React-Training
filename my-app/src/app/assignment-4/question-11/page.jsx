@@ -1,12 +1,12 @@
-import InfoModal from '@/components/Assignment4/InfoModel'
-import React from 'react'
+import InfoModal from "@/components/Assignment4/InfoModel";
+import React from "react";
 
 const page = () => {
   return (
     <div>
-      <InfoModal/>
+      <InfoModal />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;

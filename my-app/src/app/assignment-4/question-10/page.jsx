@@ -1,12 +1,12 @@
-import SimpleForm from '@/components/Assignment4/FormMui'
-import React from 'react'
+import SimpleForm from "@/components/Assignment4/FormMui";
+import React from "react";
 
 const page = () => {
   return (
     <div>
-      <SimpleForm/>
+      <SimpleForm />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;
