@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { createContext, useState, useContext } from "react";
 
@@ -12,7 +12,6 @@ export const AuthProvider = ({ children }) => {
   const login = (username) => {
     setUser({ username });
     console.log(user);
-    
   };
 
   const logout = () => {

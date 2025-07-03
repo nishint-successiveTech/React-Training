@@ -3,6 +3,7 @@ import React, { useState } from "react";
 
 import { useTheme } from "./context/ThemeContext";
 import { useAuth } from "./context/AuthContext";
+import "./ChildComponent2.css";
 
 const ChildComponent2 = () => {
   const { user, login, logout } = useAuth();
@@ -26,22 +27,14 @@ const ChildComponent2 = () => {
     }
   };
 
-  // Styling based on theme
-  const containerStyle = {
-    backgroundColor: theme === "light" ? "#ffffff" : "#222222",
-    color: theme === "light" ? "#000000" : "#ffffff",
-    padding: "20px",
-    borderRadius: "10px",
-    width: "300px",
-    margin: "auto",
-    marginTop: "20px",
-    boxShadow: "0px 0px 10px rgba(0,0,0,0.1)",
-  };
-
   return (
-    <div style={containerStyle}>
-      <hr />
-
+    <div
+      className="userContainer"
+      style={{
+        backgroundColor: theme === "light" ? "#ffffff" : "#222222",
+        color: theme === "light" ? "#000000" : "#ffffff",
+      }}
+    >
       {user ? (
         <>
           <h2>Welcome, {user.username}!</h2>
@@ -55,22 +48,22 @@ const ChildComponent2 = () => {
             placeholder="Username"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
+            className="user-input"
           />
-          <br />
-          <br />
+
           <input
             type="password"
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            className="user-input"
           />
-          <br />
-          <br />
+
           <button onClick={handleLogin}>Login</button>
           {error && <p style={{ color: "red" }}>{error}</p>}
         </>
       )}
-      <br></br>
+
       <p>
         <strong>Current Theme:</strong> {theme}
       </p>

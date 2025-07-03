@@ -25,7 +25,7 @@ const ChildComponent = () => {
       setError("Invalid credentials.");
     }
   };
-  
+
   return (
     <div style={{ marginTop: "20px" }}>
       {user ? (
