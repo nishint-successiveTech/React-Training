@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@mui/icons-material": "^7.2.0",
@@ -18,6 +19,12 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "yup": "^1.6.1"
+=======
+    "next": "15.3.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.6.3"
+>>>>>>> f9ac29df086758d39ba641c262f2fd60f8a80e10
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
