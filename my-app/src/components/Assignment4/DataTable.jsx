@@ -71,7 +71,6 @@ export default function DataTable() {
             </TableRow>
           </TableHead>
 
-      
           <TableBody>
             {paginatedData.map((row, index) => (
               <TableRow key={index}>
@@ -84,7 +83,6 @@ export default function DataTable() {
         </Table>
       </TableContainer>
 
-  
       <TablePagination
         component="div"
         count={sampleData.length} // total rows

@@ -1,7 +1,6 @@
-// app/layout.js
+
 "use client";
 import Sidebar from '@/components/Assignment4/MUI';
-import './globals.css';
 import React from 'react';
 
 const metadata = {

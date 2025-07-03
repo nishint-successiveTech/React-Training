@@ -1,14 +1,14 @@
-'use client';
-import { useState } from 'react';
+"use client";
+import { useState } from "react";
 
 export default function RegistrationForm() {
   const [formData, setFormData] = useState({
-    password: '',
-    confirmPassword: '',
+    password: "",
+    confirmPassword: "",
   });
 
-  const [error, setError] = useState('');
-  const [success, setSuccess] = useState('');
+  const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -16,8 +16,8 @@ export default function RegistrationForm() {
       ...prev,
       [name]: value,
     }));
-    setError('');
-    setSuccess('');
+    setError("");
+    setSuccess("");
   };
 
   const handleSubmit = (e) => {
@@ -25,17 +25,17 @@ export default function RegistrationForm() {
     const { password, confirmPassword } = formData;
 
     if (password !== confirmPassword) {
-      setError('Passwords do not match');
+      setError("Passwords do not match");
     } else if (!password || !confirmPassword) {
-      setError('Both fields are required');
+      setError("Both fields are required");
     } else {
-      setSuccess('Registration successful!');
-      console.log('Form submitted:', formData);
+      setSuccess("Registration successful!");
+      console.log("Form submitted:", formData);
     }
   };
 
   return (
-    <form onSubmit={handleSubmit} style={{ padding: '20px' }}>
+    <form onSubmit={handleSubmit} style={{ padding: "20px" }}>
       <h2>Register</h2>
 
       <div>
@@ -48,7 +48,7 @@ export default function RegistrationForm() {
         />
       </div>
 
-      <div style={{ marginTop: '10px' }}>
+      <div style={{ marginTop: "10px" }}>
         <label>Confirm Password: </label>
         <input
           type="password"
@@ -58,12 +58,14 @@ export default function RegistrationForm() {
         />
       </div>
 
-      <button type="submit" style={{ marginTop: '15px' }}>
+      <button type="submit" style={{ marginTop: "15px" }}>
         Submit
       </button>
 
-      {error && <p style={{ color: 'red', marginTop: '10px' }}>{error}</p>}
-      {success && <p style={{ color: 'green', marginTop: '10px' }}>{success}</p>}
+      {error && <p style={{ color: "red", marginTop: "10px" }}>{error}</p>}
+      {success && (
+        <p style={{ color: "green", marginTop: "10px" }}>{success}</p>
+      )}
     </form>
   );
 }

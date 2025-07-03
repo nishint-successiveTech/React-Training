@@ -4,7 +4,6 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import { TextField, Button, Box, Typography } from "@mui/material";
 
-
 const validationSchema = Yup.object({
   email: Yup.string()
     .email("Invalid email address")
@@ -20,7 +19,6 @@ const validationSchema = Yup.object({
 });
 
 const FormikForm = () => {
-  
   const formik = useFormik({
     initialValues: {
       email: "",
@@ -31,13 +29,19 @@ const FormikForm = () => {
     onSubmit: (values) => {
       alert(JSON.stringify(values, null, 2));
     },
-    validateOnChange: true, 
+    validateOnChange: true,
     validateOnBlur: true,
   });
 
   return (
-    <Box component="form" onSubmit={formik.handleSubmit} sx={{ maxWidth: 400, mx: "auto", mt: 4 }}>
-      <Typography variant="h5" mb={2}>Registration Form</Typography>
+    <Box
+      component="form"
+      onSubmit={formik.handleSubmit}
+      sx={{ maxWidth: 400, mx: "auto", mt: 4 }}
+    >
+      <Typography variant="h5" mb={2}>
+        Registration Form
+      </Typography>
 
       <TextField
         fullWidth
@@ -81,6 +85,6 @@ const FormikForm = () => {
       </Button>
     </Box>
   );
-}
+};
 
 export default FormikForm;

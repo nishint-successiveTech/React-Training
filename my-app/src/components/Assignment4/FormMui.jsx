@@ -1,17 +1,16 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
-import { TextField, Button, Box, Typography } from '@mui/material';
+import React, { useState } from "react";
+import { TextField, Button, Box, Typography } from "@mui/material";
 
 export default function SimpleForm() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    password: '',
+    name: "",
+    email: "",
+    password: "",
   });
 
   const [formErrors, setFormErrors] = useState({});
-
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -23,28 +22,27 @@ export default function SimpleForm() {
 
     setFormErrors({
       ...formErrors,
-      [name]: '',
+      [name]: "",
     });
   };
-
 
   const validateForm = () => {
     const errors = {};
 
     if (!formData.name.trim()) {
-      errors.name = 'Name is required';
+      errors.name = "Name is required";
     }
 
     if (!formData.email) {
-      errors.email = 'Email is required';
-    } else if (!formData.email.includes('@')) {
-      errors.email = 'Enter a valid email';
+      errors.email = "Email is required";
+    } else if (!formData.email.includes("@")) {
+      errors.email = "Enter a valid email";
     }
 
     if (!formData.password) {
-      errors.password = 'Password is required';
+      errors.password = "Password is required";
     } else if (formData.password.length < 6) {
-      errors.password = 'Password must be at least 6 characters';
+      errors.password = "Password must be at least 6 characters";
     }
 
     return errors;
@@ -58,8 +56,8 @@ export default function SimpleForm() {
     if (Object.keys(errors).length > 0) {
       setFormErrors(errors);
     } else {
-      alert('Form submitted successfully');
-      setFormData({ name: '', email: '', password: '' });
+      alert("Form submitted successfully");
+      setFormData({ name: "", email: "", password: "" });
     }
   };
 
@@ -67,12 +65,12 @@ export default function SimpleForm() {
     <Box
       sx={{
         maxWidth: 400,
-        mx: 'auto',
+        mx: "auto",
         mt: 5,
         p: 3,
-        border: '1px solid #ccc',
+        border: "1px solid #ccc",
         borderRadius: 2,
-        backgroundColor: '#fafafa',
+        backgroundColor: "#fafafa",
       }}
     >
       <Typography variant="h5" textAlign="center" mb={2}>

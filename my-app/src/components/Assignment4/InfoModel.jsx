@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   Dialog,
   DialogTitle,
@@ -8,12 +8,10 @@ import {
   DialogContentText,
   DialogActions,
   Button,
-} from '@mui/material';
-
+} from "@mui/material";
 
 export default function InfoModal() {
   const [open, setOpen] = useState(false);
-
 
   const handleToggle = () => {
     setOpen(!open);
@@ -21,12 +19,10 @@ export default function InfoModal() {
 
   return (
     <div>
-   
       <Button variant="outlined" onClick={handleToggle}>
         Open Info Modal
       </Button>
 
-   
       <Dialog open={open} onClose={handleToggle}>
         <DialogTitle>About This App</DialogTitle>
 

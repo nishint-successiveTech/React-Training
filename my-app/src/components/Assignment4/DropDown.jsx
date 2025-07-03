@@ -1,15 +1,15 @@
-'use client';
-import { useState } from 'react';
+"use client";
+import { useState } from "react";
 
 export default function SelectDropdown() {
-  const [selectedOption, setSelectedOption] = useState('');
+  const [selectedOption, setSelectedOption] = useState("");
 
   const handleChange = (e) => {
     setSelectedOption(e.target.value);
   };
 
   return (
-    <div style={{ padding: '20px' }}>
+    <div style={{ padding: "20px" }}>
       <h2>Select a Fruit</h2>
 
       <select value={selectedOption} onChange={handleChange}>
@@ -21,7 +21,7 @@ export default function SelectDropdown() {
       </select>
 
       {selectedOption && (
-        <p style={{ marginTop: '10px', color: 'green' }}>
+        <p style={{ marginTop: "10px", color: "green" }}>
           You selected: <strong>{selectedOption}</strong>
         </p>
       )}
