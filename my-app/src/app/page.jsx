@@ -4,17 +4,19 @@ import Link from "next/link";
 import React from "react";
 
 const Page = () => {
-  const assignments = [1, 2, 3];
+  const assignments = [1, 2, 3, 4];
 
   return (
     <div>
       <center>
         <h1>SELECT YOUR ASSIGNMENT PLEASE</h1>
-        {assignments.map((id) => (
-          <li>
-            <Link href={`/assignment-${id}`}>Assignment {id}</Link>
-          </li>
-        ))}
+        <ul>
+          {assignments.map((id) => (
+            <li key={id}>
+              <Link href={`/assignment-${id}`}>Assignment {id}</Link>
+            </li>
+          ))}
+        </ul>
       </center>
     </div>
   );
