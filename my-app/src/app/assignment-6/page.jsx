@@ -3,7 +3,7 @@ import React from "react";
 import Link from "next/link";
 
 const Page = () => {
-  const questions = [1, 2, 3, 4, 5, 6 ];
+  const questions = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
 
   return (
     <div>
@@ -12,7 +12,7 @@ const Page = () => {
         <ul>
           {questions.map((id) => (
             <li key={id}>
-              <Link href={`/assignment-4/question-${id}`}>Question {id}</Link>
+              <Link href={`/assignment-6/question-${id}`}>Question {id}</Link>
             </li>
           ))}
         </ul>
