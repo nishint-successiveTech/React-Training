@@ -14,6 +14,5 @@ const FetchData = (props) => {
   );
 };
 export default withDataFetching(
-  FetchData,
-  "https://jsonplaceholder.typicode.com/users"
+  FetchData
 );

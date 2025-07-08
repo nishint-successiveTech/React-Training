@@ -1,11 +1,11 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import axios from 'axios';
+import { useState } from "react";
+import axios from "axios";
 
 export default function PostsPage() {
-  const [title, setTitle] = useState('');
-  const [content, setContent] = useState('');
+  const [title, setTitle] = useState("");
+  const [content, setContent] = useState("");
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(null);
   const [error, setError] = useState(null);
@@ -17,15 +17,18 @@ export default function PostsPage() {
     setLoading(true);
 
     try {
-      const response = await axios.post('https://jsonplaceholder.typicode.com/posts', {
-        title,
-        body: content,
-        userId: 1,
-      });
-      setSuccess('Post submitted successfully!');
+      const response = await axios.post(
+        "https://jsonplaceholder.typicode.com/posts",
+        {
+          title,
+          body: content,
+          userId: 1,
+        }
+      );
+      setSuccess("Post submitted successfully!");
       console.log(response.data);
     } catch (err) {
-      setError('Failed to submit the post. Please try again.');
+      setError("Failed to submit the post. Please try again.");
     } finally {
       setLoading(false);
     }
@@ -57,11 +60,11 @@ export default function PostsPage() {
           />
         </div>
         <button type="submit" disabled={loading}>
-          {loading ? 'Submitting...' : 'Submit Post'}
+          {loading ? "Submitting..." : "Submit Post"}
         </button>
       </form>
-      {success && <p style={{ color: 'green' }}>{success}</p>}
-      {error && <p style={{ color: 'red' }}>{error}</p>}
+      {success && <p style={{ color: "green" }}>{success}</p>}
+      {error && <p style={{ color: "red" }}>{error}</p>}
     </div>
   );
 }

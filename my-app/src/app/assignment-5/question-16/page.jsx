@@ -10,7 +10,7 @@ const FetchDataPage = () => {
         data should then be passed as props to a Client Component wrapped by the
         HOC, which displays the data.
       </p>
-      <FetchData />
+      <FetchData url= "https://jsonplaceholder.typicode.com/users"/>
     </div>
   );
 };

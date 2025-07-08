@@ -1,14 +1,15 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { handleSubmitAction } from "./actions";
+import { fetchData } from "./actions";
 
-const withDataFetching = (Component, url) => (props) => {
+
+const withDataFetching = (Component) => (props) => {
   const [data, setData] = useState([]);
-
+  const {url}=props
   const getData = async () => {
     try {
-      const response = await handleSubmitAction(url);
+      const response = await fetchData(url);
       setData(response);
     } catch (error) {
       console.error("Error fetching data:", error);
