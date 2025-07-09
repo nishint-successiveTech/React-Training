@@ -15,3 +15,4 @@ const withLogger = (Component) => (props) => {
 };
 
 export default withLogger;
+

@@ -25,3 +25,4 @@ const LoggerComponent = () => {
 };
 
 export default withLogger(LoggerComponent);
+

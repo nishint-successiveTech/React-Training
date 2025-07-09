@@ -24,3 +24,4 @@ const withDataFetching = (Component) => (props) => {
 };
 
 export default withDataFetching;
+

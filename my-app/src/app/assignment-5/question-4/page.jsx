@@ -68,4 +68,3 @@ function PaginatedPosts() {
 
 export default PaginatedPosts;
 
-

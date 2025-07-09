@@ -15,3 +15,4 @@ const FetchDataPage = () => {
   );
 };
 export default FetchDataPage;
+

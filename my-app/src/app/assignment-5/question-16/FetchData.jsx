@@ -16,3 +16,4 @@ const FetchData = (props) => {
 export default withDataFetching(
   FetchData
 );
+

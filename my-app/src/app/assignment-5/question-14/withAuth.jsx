@@ -42,3 +42,4 @@ const withAuth = (Component) => (props) => {
 };
 
 export default withAuth;
+

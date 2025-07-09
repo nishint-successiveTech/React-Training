@@ -15,3 +15,4 @@ const LoggerPage = () => {
   );
 };
 export default LoggerPage;
+
