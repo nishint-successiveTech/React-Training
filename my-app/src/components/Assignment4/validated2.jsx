@@ -95,3 +95,4 @@ const ValidatedForm = () => {
 };
 
 export default ValidatedForm;
+

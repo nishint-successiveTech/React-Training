@@ -17,3 +17,4 @@ const VotingButtons = ({ dispatch }) => {
 };
 
 export default VotingButtons;
+

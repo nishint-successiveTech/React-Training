@@ -16,3 +16,4 @@ const ClipboardComponent = () => {
 };
 
 export default ClipboardComponent;
+

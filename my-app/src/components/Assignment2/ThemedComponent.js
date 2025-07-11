@@ -28,3 +28,4 @@ const ThemedComponent = () => {
 };
 
 export default ThemedComponent;
+

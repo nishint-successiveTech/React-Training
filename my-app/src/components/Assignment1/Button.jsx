@@ -9,3 +9,4 @@ const Button = ({ text, color }) => {
 };
 
 export default Button;
+

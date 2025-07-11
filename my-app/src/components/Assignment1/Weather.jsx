@@ -11,3 +11,4 @@ const Weather = ({ temp }) => {
 };
 
 export default Weather;
+

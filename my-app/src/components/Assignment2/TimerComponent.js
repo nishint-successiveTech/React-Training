@@ -16,3 +16,4 @@ const TimerComponent = () => {
 };
 
 export default TimerComponent;
+
