@@ -18,3 +18,4 @@ const Task = React.memo(({ task, onComplete }) => {
 });
 
 export default Task;
+

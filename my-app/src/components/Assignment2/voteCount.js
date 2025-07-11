@@ -12,3 +12,4 @@ const VoteCount = ({ votes }) => {
 };
 
 export default VoteCount;
+

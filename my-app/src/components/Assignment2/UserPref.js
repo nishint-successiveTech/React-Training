@@ -26,3 +26,4 @@ const UserPreferences = () => {
 };
 
 export default UserPreferences;
+

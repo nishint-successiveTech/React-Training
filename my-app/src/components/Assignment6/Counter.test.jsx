@@ -25,3 +25,4 @@ describe("Counter component", () => {
     expect(screen.getByText(/Count: -1/)).toBeInTheDocument();
   });
 });
+

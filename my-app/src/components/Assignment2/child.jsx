@@ -12,3 +12,4 @@ const Child = ({ count, increment, reset }) => {
 };
 
 export default Child;
+

@@ -24,3 +24,4 @@ describe("UserProfile component", () => {
     expect(screen.getByText(/Phone number : 7668725002/i)).toBeInTheDocument();
   });
 });
+

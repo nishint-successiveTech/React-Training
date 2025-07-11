@@ -15,3 +15,4 @@ const UserCard = ({ name, email, avatarUrl }) => {
 };
 
 export default UserCard;
+

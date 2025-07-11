@@ -26,3 +26,4 @@ const useTimer = (startTime) => {
 };
 
 export default useTimer;
+

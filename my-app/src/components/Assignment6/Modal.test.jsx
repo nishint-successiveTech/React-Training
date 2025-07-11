@@ -32,3 +32,4 @@ describe("ModalComponent", () => {
     expect(screen.queryByText(/modal content/i)).not.toBeInTheDocument();
   });
 });
+
